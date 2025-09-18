@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./newstye.css">
+  <title>Document</title>
+</head>
+<body class=" bg-gray-500 overflow-x-hidden pl-10 pr-10 ">
+  <div class=" flex flex-col relative items-center  w-1/1 h-150 ">
+      <h1 class="text-2xl underline sticky mt-20 font-bold mb-4 text-center">To-Do List</h1>
+     <h2 id="text1" class="text-2xl mt-3 mb-3 text-gray-700"></h2>
+   <div id="hide" class="flex flex-col h-60 w-1/1 items-center justify-center mt-0 transition transform-3d hover:scale-110 hover:bg-gray-500 hover:shadow-gray-800 hover:shadow-2xl ease-in-out duration-300">
+     <h2 id="nameTag" class="text-2xl mt-10 w-auto text-gray-300">what is your name</h2>
+   
+  <input type="text" class="bg-slate-800 mt-2 text-white w-1/2 h-8 border-b-2 border-black" id="textbox">
+  <button id="button" onclick="return validateBut()" class="h-10 mt-5 border-black border-2 w-1/3">Enter</button>
+   </div>
+   <div>
+   
+    
+    
+    <form id="todoForm" class="flex hover:shadow-2xl hover:shadow-gray-700 justify-center    flex-col items-center rounded-2xl p-10 hover:border-2 hover:border-slate-700 mt-10 duration-600 hidden transition mb-4 "> 
+        <input  type="text"
+        id="taskInput"
+        placeholder="Add a task..."
+        class="flex-1  w-30 border h-20 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+    
+        <button
+          type="submit"
+          class="bg-blue-500 text-white  rounded hover:bg-blue-600 w-20 mt-5 h-8 transition duration-300">Add
+        </button>
+      
+        
+        <div id="todoList" class="flex flex-col justify-center w-auto items-center mt-3"></div>
+    </form>
+
+   
+   
+   </div>
+
+  </div> 
+</body>
+</html>

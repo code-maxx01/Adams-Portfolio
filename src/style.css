@@ -1,0 +1,6 @@
+@import "tailwindcss";
+.bg-backwhite{
+  background-image: url(/src/jeremy-bishop-G9i_plbfDgk-unsplash.jpg);
+  min-height: 500px;
+  width:auto;
+}
