@@ -7,6 +7,9 @@ const hideBtnss = document.getElementById("hideBtnss")
 const hideBtnsss = document.getElementById("hideBtnsss")
 menuBtn.addEventListener("click", () =>{
   nav.style.display = "block"
+  nav.style.transitionDuration = "5s"
+  nav.style.transition = "translate"
+  nav.style.translate = "20px"
   cancelBtn.style.display = "flex"
   menuBtn.style.display = "none"
 
